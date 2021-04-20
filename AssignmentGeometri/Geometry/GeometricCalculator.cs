@@ -18,6 +18,11 @@ namespace AssignmentGeometri
         }
         public float GetPerimeter(GeometricThing[] thing)
         {
+            if (thing is Square s)
+            {
+                return s.Side * s.Side;
+            }
+
             return 0;
         }
     }

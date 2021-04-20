@@ -23,6 +23,14 @@ namespace AssignmentGeometri.Tests
                 new Rectangle(10,10),
                 new Triangle(10,10)
             });
+            var expected = calc.GetPerimeter(new GeometricThing[]
+            {
+                new Square(10),
+                new Circle(10),
+                new Rectangle(10,10),
+                new Triangle(10,10)
+            });
+            Assert.AreEqual(expected, actual);
         }
     }
 }
