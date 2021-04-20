@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AssignmentGeometri.Geometry;
 
 namespace AssignmentGeometri.Tests
 {
@@ -17,7 +18,10 @@ namespace AssignmentGeometri.Tests
             var calc = new GeometricCalculator();
             var actual = calc.GetPerimeter(new GeometricThing[]
             {
-                new Square(10)
+                new Square(10),
+                new Circle(10),
+                new Rectangle(10,10),
+                new Triangle(10,10)
             });
         }
     }

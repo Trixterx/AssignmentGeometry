@@ -25,8 +25,7 @@ namespace AssignmentGeometri.Geometry
 
         public override float GetPerimeter()
         {
-            return 0;
-            //return 4 * side;
+            return (Side1 * 2) + (Side2 * 2);
         }
     }
 }
