@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AssignmentGeometri
 {
-    public class GeometricCalculator : GeometricThing
+    public class GeometricCalculator
     {
         public float GetArea(GeometricThing thing)
         {
