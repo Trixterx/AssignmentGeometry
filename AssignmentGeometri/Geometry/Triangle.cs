@@ -8,13 +8,13 @@ namespace AssignmentGeometri.Geometry
 {
     public class Triangle : GeometricThing
     {
+        public float Base { get; set; }
         public float Height { get; set; }
-        public float Width { get; set; }
 
-        public Triangle(int height, int width)
+        public Triangle(int height, int bas)
         {
+            Base = bas;
             Height = height;
-            Width = width;
         }
 
         public override float GetArea()
