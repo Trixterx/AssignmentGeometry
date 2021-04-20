@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AssignmentGeometri
+﻿namespace AssignmentGeometri
 {
     public class Square : GeometricThing
     {
@@ -12,17 +6,19 @@ namespace AssignmentGeometri
 
         public Square(int side)
         {
-            this.Side = side;
+            Side = side;
         }
 
         public override float GetArea()
         {
-            return (float)Math.Pow(Side, 2);
+            return -1;
+            //return (float)Math.Pow(Side, 2);
         }
 
         public override float GetPerimeter()
         {
-            return 4 * Side;
+            return -1;
+            //return 4 * Side;
         }
     }
 }

@@ -12,18 +12,18 @@ namespace AssignmentGeometri.Geometry
 
         public Circle(int radius)
         {
-            this.Radius = radius;
+            Radius = radius;
         }
 
         public override float GetArea()
         {
-            return 0;
+            return -1;
             //return (float)Math.Pow(side, 2)
         }
 
         public override float GetPerimeter()
         {
-            return 0;
+            return -1;
             //return 4 * side;
         }
     }

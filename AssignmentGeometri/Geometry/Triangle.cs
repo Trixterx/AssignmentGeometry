@@ -8,24 +8,24 @@ namespace AssignmentGeometri.Geometry
 {
     public class Triangle : GeometricThing
     {
-        public float Side1 { get; set; }
-        public float Side2 { get; set; }
+        public float Height { get; set; }
+        public float Width { get; set; }
 
-        public Triangle(int side1, int side2)
+        public Triangle(int height, int width)
         {
-            this.Side1 = side1;
-            this.Side2 = side2;
+            Height = height;
+            Width = width;
         }
 
         public override float GetArea()
         {
-            return 0;
+            return -1;
             //return (float)Math.Pow(side, 2)
         }
 
         public override float GetPerimeter()
         {
-            return 0;
+            return -1;
             //return 4 * side;
         }
     }
