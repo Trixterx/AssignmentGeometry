@@ -15,7 +15,7 @@ namespace AssignmentGeometri.Tests
         [TestMethod()]
         public void GetPerimeterTest()
         {
-
+            Assert.Fail();
         }
     }
 }
