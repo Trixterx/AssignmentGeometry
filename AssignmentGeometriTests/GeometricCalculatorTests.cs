@@ -36,6 +36,7 @@ namespace AssignmentGeometri.Tests
             Assert.AreEqual(expected, actual);
             //Assert.Fail();
         }
+
         [TestMethod()]
         public void GetPerimeterTestSquare()
         {
@@ -43,6 +44,19 @@ namespace AssignmentGeometri.Tests
             var actual = calc.GetPerimeter(new GeometricThing[]
             {
                 new Square(10) // <-- Tryck F12 över Square
+            });
+
+            var expected = 40f;
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod()]
+        public void GetPerimeterTestRectangle()
+        {
+            var calc = new GeometricCalculator();
+            var actual = calc.GetPerimeter(new GeometricThing[]
+            {
+                new Rectangle(10, 10) // <-- Tryck F12 över Square
             });
 
             var expected = 40f;

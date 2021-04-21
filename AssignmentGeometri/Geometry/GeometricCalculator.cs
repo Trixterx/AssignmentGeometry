@@ -25,6 +25,10 @@ namespace AssignmentGeometri.Geometry
                 {
                     return s.GetPerimeter();
                 }
+                else if (shape is Rectangle r)
+                {
+                    return r.GetPerimeter();
+                }
             }
             return 0;
         }
