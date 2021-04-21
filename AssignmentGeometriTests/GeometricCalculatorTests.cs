@@ -43,7 +43,7 @@ namespace AssignmentGeometri.Tests
             var calc = new GeometricCalculator();
             var actual = calc.GetPerimeter(new GeometricThing[]
             {
-                new Square(10) // <-- Tryck F12 över Square
+                new Square(10)
             });
 
             var expected = 40f;
@@ -56,7 +56,7 @@ namespace AssignmentGeometri.Tests
             var calc = new GeometricCalculator();
             var actual = calc.GetPerimeter(new GeometricThing[]
             {
-                new Rectangle(10, 10) // <-- Tryck F12 över Square
+                new Rectangle(10, 10)
             });
 
             var expected = 40f;
