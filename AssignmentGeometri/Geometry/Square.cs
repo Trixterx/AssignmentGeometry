@@ -11,12 +11,12 @@
 
         public override float GetArea()
         {
-            return 0;
+            return Side * Side;
         }
 
         public override float GetPerimeter()
         {
-            return 0;
+            return Side * 4;
         }
     }
 }

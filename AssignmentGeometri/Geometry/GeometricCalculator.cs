@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AssignmentGeometri
+namespace AssignmentGeometri.Geometry
 {
     public class GeometricCalculator
     {
@@ -19,6 +19,13 @@ namespace AssignmentGeometri
         }
         public float GetPerimeter(GeometricThing[] thing)
         {
+            foreach (var shape in thing)
+            {
+                if (shape is Square s)
+                {
+                    return s.GetPerimeter();
+                }
+            }
             return 0;
         }
     }

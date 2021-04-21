@@ -15,7 +15,38 @@ namespace AssignmentGeometri.Tests
         [TestMethod()]
         public void GetPerimeterTest()
         {
-            Assert.Fail();
+            // TODO: Skapa Perimetertest
+            // 1 - skapa en array av geometric things
+            // 2 - Skicka in arrayen till GetPerimeter
+            // 3 - Jämför actual och expected
+            // actual kommer att bli noll första rundan och det är helt rätt
+
+            var calc = new GeometricCalculator();
+            var actual = calc.GetPerimeter(new GeometricThing[]
+            {
+                new Square(10),
+                new Circle(10),
+                new Rectangle(10,10),
+                new Triangle(10,10)
+            });
+            // Expected ska vara en float då GetPerimeter returnerar en float
+            // Just nu kör du samma metod två gånger och testat att resultet blir samma
+            // det kan aldrig faila, för det är som att jämföra if (true==true)
+            var expected = 100; // exempel
+            Assert.AreEqual(expected, actual);
+            //Assert.Fail();
+        }
+        [TestMethod()]
+        public void GetPerimeterTestSquare()
+        {
+            var calc = new GeometricCalculator();
+            var actual = calc.GetPerimeter(new GeometricThing[]
+            {
+                new Square(10) // <-- Tryck F12 över Square
+            });
+
+            var expected = 40f;
+            Assert.AreEqual(expected, actual);
         }
     }
 }
