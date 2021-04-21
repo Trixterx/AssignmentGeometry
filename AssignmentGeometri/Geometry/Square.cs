@@ -11,14 +11,12 @@
 
         public override float GetArea()
         {
-            return -1;
-            //return (float)Math.Pow(Side, 2);
+            return 0;
         }
 
         public override float GetPerimeter()
         {
-            return -1;
-            //return 4 * Side;
+            return 0;
         }
     }
 }

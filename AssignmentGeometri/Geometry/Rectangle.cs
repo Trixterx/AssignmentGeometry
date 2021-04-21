@@ -19,14 +19,12 @@ namespace AssignmentGeometri.Geometry
 
         public override float GetArea()
         {
-            return -1;
-            //return (float)Math.Pow(side, 2)
+            return 0;
         }
 
         public override float GetPerimeter()
         {
-            return -1;
-            //return (Side1 * 2) + (Side2 * 2);
+            return 0;
         }
     }
 }
