@@ -4,7 +4,7 @@
     {
         public float Side { get; set; }
 
-        public Square(int side)
+        public Square(float side)
         {
             Side = side;
         }

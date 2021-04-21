@@ -10,7 +10,7 @@ namespace AssignmentGeometri.Geometry
     {
         public float Radius { get; set; }
 
-        public Circle(int radius)
+        public Circle(float radius)
         {
             Radius = radius;
         }

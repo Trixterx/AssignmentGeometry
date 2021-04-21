@@ -11,7 +11,7 @@ namespace AssignmentGeometri.Geometry
         public float Base { get; set; }
         public float Height { get; set; }
 
-        public Triangle(int height, int bas)
+        public Triangle(float height, float bas)
         {
             Base = bas;
             Height = height;

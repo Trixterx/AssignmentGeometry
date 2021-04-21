@@ -11,7 +11,7 @@ namespace AssignmentGeometri.Geometry
         public float Height { get; set; }
         public float Width { get; set; }
 
-        public Rectangle(int height, int width)
+        public Rectangle(float height, float width)
         {
             Height = height;
             Width = width;
