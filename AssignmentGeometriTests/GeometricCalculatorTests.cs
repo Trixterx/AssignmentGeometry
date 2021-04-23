@@ -144,7 +144,7 @@ namespace AssignmentGeometri.Tests
         {
             var calc = new GeometricCalculator();
             var actual = calc.GetArea(new Circle(10));
-            var expected = 40F;
+            var expected = 314F;
             Assert.AreEqual(expected, actual);
         }
     }
