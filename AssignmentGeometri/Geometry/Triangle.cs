@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace AssignmentGeometri.Geometry
 {
+    /// <summary>
+    /// kommentarer är alltid bra att ha ;)
+    /// </summary>
     public class Triangle : GeometricThing
     {
         public float Base { get; set; }

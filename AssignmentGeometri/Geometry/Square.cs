@@ -1,4 +1,6 @@
-﻿namespace AssignmentGeometri
+﻿using System;
+
+namespace AssignmentGeometri
 {
     public class Square : GeometricThing
     {
@@ -11,7 +13,7 @@
 
         public override float GetArea()
         {
-            return Side * Side;
+            return (float)Math.Pow(Side, 2);
         }
 
         public override float GetPerimeter()
