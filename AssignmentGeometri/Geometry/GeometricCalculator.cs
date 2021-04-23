@@ -12,7 +12,7 @@ namespace AssignmentGeometri.Geometry
         public float GetArea(GeometricThing thing)
         {
             if (thing == null) { return 0; }
-            return thing.GetArea();
+            else { return thing.GetArea(); }
         }
 
         public float GetPerimeter(GeometricThing[] thing)
