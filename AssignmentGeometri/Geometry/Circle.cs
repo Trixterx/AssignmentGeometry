@@ -17,7 +17,7 @@ namespace AssignmentGeometri.Geometry
 
         public override float GetArea()
         {
-            return 0;
+            return 3.14F * (Radius * Radius);
         }
 
         public override float GetPerimeter()

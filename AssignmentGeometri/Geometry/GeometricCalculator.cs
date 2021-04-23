@@ -19,16 +19,36 @@ namespace AssignmentGeometri.Geometry
         }
         public float GetPerimeter(GeometricThing[] thing)
         {
-            foreach (var shape in thing)
+            if (thing.Length == 1 && thing.Length > 0)
             {
-                if (shape is Square s)
+                foreach (var shape in thing)
                 {
-                    return s.GetPerimeter();
+                    if (shape is Square s)
+                    {
+                        return s.GetPerimeter();
+                    }
+                    else if (shape is Rectangle r)
+                    {
+                        return r.GetPerimeter();
+                    }
+                    else if (shape is Triangle t)
+                    {
+                        return t.GetPerimeter();
+                    }
+                    else if (shape is Circle c)
+                    {
+                        return c.GetPerimeter();
+                    }
                 }
-                else if (shape is Rectangle r)
+            }
+            else if (thing.Length > 1)
+            {
+                float sum = 0;
+                foreach (var shape in thing)
                 {
-                    return r.GetPerimeter();
+                    sum += shape.GetPerimeter();
                 }
+                return sum;
             }
             return 0;
         }

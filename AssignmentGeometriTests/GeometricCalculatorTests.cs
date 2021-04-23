@@ -29,12 +29,8 @@ namespace AssignmentGeometri.Tests
                 new Rectangle(10,10),
                 new Triangle(10,10)
             });
-            // Expected ska vara en float då GetPerimeter returnerar en float
-            // Just nu kör du samma metod två gånger och testat att resultet blir samma
-            // det kan aldrig faila, för det är som att jämföra if (true==true)
-            var expected = 100; // exempel
+            var expected = 80F;
             Assert.AreEqual(expected, actual);
-            //Assert.Fail();
         }
 
         [TestMethod()]
@@ -46,7 +42,7 @@ namespace AssignmentGeometri.Tests
                 new Square(10)
             });
 
-            var expected = 40f;
+            var expected = 40F;
             Assert.AreEqual(expected, actual);
         }
 
@@ -59,7 +55,33 @@ namespace AssignmentGeometri.Tests
                 new Rectangle(10, 10)
             });
 
-            var expected = 40f;
+            var expected = 100F;
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod()]
+        public void GetPerimeterTestTriangle()
+        {
+            var calc = new GeometricCalculator();
+            var actual = calc.GetPerimeter(new GeometricThing[]
+            {
+                new Triangle(10, 10)
+            });
+
+            var expected = 100F;
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod()]
+        public void GetPerimeterTestCircle()
+        {
+            var calc = new GeometricCalculator();
+            var actual = calc.GetPerimeter(new GeometricThing[]
+            {
+                new Circle(10)
+            });
+
+            var expected = 100F;
             Assert.AreEqual(expected, actual);
         }
     }
