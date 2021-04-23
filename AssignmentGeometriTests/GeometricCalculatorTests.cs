@@ -22,7 +22,6 @@ namespace AssignmentGeometri.Tests
             // 1 - skapa en array av geometric things
             // 2 - Skicka in arrayen till GetPerimeter
             // 3 - Jämför actual och expected
-            // actual kommer att bli noll första rundan och det är helt rätt
 
             var calc = new GeometricCalculator();
             var actual = calc.GetPerimeter(new GeometricThing[]
@@ -80,7 +79,7 @@ namespace AssignmentGeometri.Tests
                 new Triangle(10, 10)
             });
 
-            var expected = 100F;
+            var expected = 30F;
             Assert.AreEqual(expected, actual);
         }
 
