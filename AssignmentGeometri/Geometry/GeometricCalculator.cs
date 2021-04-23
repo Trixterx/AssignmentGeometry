@@ -11,12 +11,12 @@ namespace AssignmentGeometri.Geometry
     {
         public float GetArea(GeometricThing thing)
         {
-            return 0;
+            return thing.GetArea();
         }
-        public float GetPerimeter(GeometricThing thing)
-        {
-            return 0;
-        }
+        //public float GetPerimeter(GeometricThing thing)
+        //{
+        //    return 0;
+        //}
         public float GetPerimeter(GeometricThing[] thing)
         {
             if (thing.Length == 1 && thing.Length > 0)
@@ -43,7 +43,7 @@ namespace AssignmentGeometri.Geometry
             }
             else if (thing.Length > 1)
             {
-                float sum = 0;
+                float sum = 0F;
                 foreach (var shape in thing)
                 {
                     sum += shape.GetPerimeter();

@@ -12,6 +12,9 @@ namespace AssignmentGeometri.Tests
     [TestClass()]
     public class GeometricCalculatorTests
     {
+        /// <summary>
+        /// Test Perimeter of Array with shapes.
+        /// </summary>
         [TestMethod()]
         public void GetPerimeterTest()
         {
@@ -33,6 +36,9 @@ namespace AssignmentGeometri.Tests
             Assert.AreEqual(expected, actual);
         }
 
+        /// <summary>
+        /// Test Perimeter of Square.
+        /// </summary>
         [TestMethod()]
         public void GetPerimeterTestSquare()
         {
@@ -46,6 +52,9 @@ namespace AssignmentGeometri.Tests
             Assert.AreEqual(expected, actual);
         }
 
+        /// <summary>
+        /// Test Perimeter of Rectangle.
+        /// </summary>
         [TestMethod()]
         public void GetPerimeterTestRectangle()
         {
@@ -59,6 +68,9 @@ namespace AssignmentGeometri.Tests
             Assert.AreEqual(expected, actual);
         }
 
+        /// <summary>
+        /// Test Perimeter of Triangle.
+        /// </summary>
         [TestMethod()]
         public void GetPerimeterTestTriangle()
         {
@@ -72,6 +84,9 @@ namespace AssignmentGeometri.Tests
             Assert.AreEqual(expected, actual);
         }
 
+        /// <summary>
+        /// Test Perimeter of Circle.
+        /// </summary>
         [TestMethod()]
         public void GetPerimeterTestCircle()
         {
@@ -82,6 +97,54 @@ namespace AssignmentGeometri.Tests
             });
 
             var expected = 100F;
+            Assert.AreEqual(expected, actual);
+        }
+
+        /// <summary>
+        /// Test Area of square.
+        /// </summary>
+        [TestMethod()]
+        public void GetAreaTestSquare()
+        {
+            var calc = new GeometricCalculator();
+            var actual = calc.GetArea(new Square(10));
+            var expected = 40F;
+            Assert.AreEqual(expected, actual);
+        }
+
+        /// <summary>
+        /// Test Area of Rectangle.
+        /// </summary>
+        [TestMethod()]
+        public void GetAreaTestRectangle()
+        {
+            var calc = new GeometricCalculator();
+            var actual = calc.GetArea(new Rectangle(10, 10));
+            var expected = 40F;
+            Assert.AreEqual(expected, actual);
+        }
+
+        /// <summary>
+        /// Test Area of Triangle.
+        /// </summary>
+        [TestMethod()]
+        public void GetAreaTestTriangle()
+        {
+            var calc = new GeometricCalculator();
+            var actual = calc.GetArea(new Triangle(10, 10));
+            var expected = 40F;
+            Assert.AreEqual(expected, actual);
+        }
+
+        /// <summary>
+        /// Test Area of Circle.
+        /// </summary>
+        [TestMethod()]
+        public void GetAreaTestCircle()
+        {
+            var calc = new GeometricCalculator();
+            var actual = calc.GetArea(new Circle(10));
+            var expected = 40F;
             Assert.AreEqual(expected, actual);
         }
     }
