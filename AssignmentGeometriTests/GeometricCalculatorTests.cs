@@ -16,7 +16,7 @@ namespace AssignmentGeometri.Tests
         /// Test Perimeter of Array with shapes.
         /// </summary>
         [TestMethod()]
-        public void GetPerimeterTest()
+        public void GetPerimeterTest_ArrayOfShapes()
         {
             // TODO: Skapa Perimetertest
             // 1 - skapa en array av geometric things
