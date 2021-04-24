@@ -2,6 +2,9 @@
 
 namespace AssignmentGeometri
 {
+    /// <summary>
+    /// Class for Square shape.
+    /// </summary>
     public class Square : GeometricThing
     {
         public float Side { get; set; }

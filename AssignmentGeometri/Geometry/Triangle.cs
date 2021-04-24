@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace AssignmentGeometri.Geometry
 {
     /// <summary>
-    /// kommentarer är alltid bra att ha ;)
+    /// Class for Triangle shape.
     /// </summary>
     public class Triangle : GeometricThing
     {

@@ -11,7 +11,7 @@ namespace AssignmentGeometri
         /// <summary>
         /// Calculate Perimeter.
         /// </summary>
-        /// <returns>Perimeter in float</returns>
+        /// <returns>Perimeter in float.</returns>
         public abstract float GetPerimeter();
         /// <summary>
         /// Calculate Area.

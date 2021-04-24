@@ -146,19 +146,5 @@ namespace AssignmentGeometri.Tests
             var expected = 314.16F;
             Assert.AreEqual(Math.Round(expected, 2), Math.Round(actual, 2));
         }
-
-        [TestMethod()]
-        public void GetPerimeterTest_Null()
-        {
-            // TODO: Skapa Perimetertest
-            // 1 - skapa en array av geometric things
-            // 2 - Skicka in arrayen till GetPerimeter
-            // 3 - Jämför actual och expected
-
-            var calc = new GeometricCalculator();
-            var actual = calc.GetPerimeter(new GeometricThing[] { });
-           // var expected = 172.83F;
-            Assert.IsNull(actual);
-        }
     }
 }

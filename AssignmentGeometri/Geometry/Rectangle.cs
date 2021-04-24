@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace AssignmentGeometri.Geometry
 {
+    /// <summary>
+    /// Class for Rectangle shape.
+    /// </summary>
     public class Rectangle : GeometricThing
     {
         public float Height { get; set; }

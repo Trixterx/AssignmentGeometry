@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace AssignmentGeometri.Geometry
 {
+    /// <summary>
+    /// Class for Circle shape.
+    /// </summary>
     public class Circle : GeometricThing
     {
         public float Radius { get; set; }
