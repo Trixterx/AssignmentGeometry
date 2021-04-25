@@ -210,6 +210,7 @@ namespace AssignmentGeometri.Tests
             var expected = 325.66F;
             Assert.AreEqual(Math.Round(expected, 2), Math.Round(actual, 2));
         }
+
         /// <summary>
         /// Test Perimeter of Array with shapes with negative numbers.
         /// </summary>
@@ -329,6 +330,7 @@ namespace AssignmentGeometri.Tests
             var expected = 80F;
             Assert.AreEqual(Math.Round(expected, 2), Math.Round(actual, 2));
         }
+
         /// <summary>
         /// Test Perimeter of Triangle with base 10 and height 20.
         /// </summary>
