@@ -54,7 +54,7 @@ namespace AssignmentGeometri.Tests
             var expected = 0F;
             Assert.AreEqual(Math.Round(expected, 2), Math.Round(actual, 2));
         }
-
+        
         /// <summary>
         /// Test Area method with null.
         /// </summary>
