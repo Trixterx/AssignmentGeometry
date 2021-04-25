@@ -146,5 +146,23 @@ namespace AssignmentGeometri.Tests
             var expected = 314.16F;
             Assert.AreEqual(Math.Round(expected, 2), Math.Round(actual, 2));
         }
+
+        [TestMethod()]
+        public void GetAreaTest_Null()
+        {
+            var calc = new GeometricCalculator();
+            var actual = calc.GetArea(null);
+            var expected = 0F;
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod()]
+        public void GetPerimeterTest_Null()
+        {
+            var calc = new GeometricCalculator();
+            var actual = calc.GetPerimeter(null);
+            var expected = 0;
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
