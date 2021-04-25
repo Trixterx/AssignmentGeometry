@@ -17,10 +17,30 @@ namespace AssignmentGeometri.Geometry
         /// </summary>
         /// <param name="thing"></param>
         /// <returns></returns>
-        public float GetArea(GeometricThing thing)
+        public float GetArea(GeometricThing[] thing)
         {
-            if (thing == null) { return 0F; }
-            else { return thing.GetArea(); }
+            if (thing == null) { return 0; }
+            else
+            {
+                if (thing.Length == 1)
+                {
+                    foreach (var shape in thing)
+                    {
+                        return shape.GetArea();
+                    }
+                }
+                else if (thing.Length > 1)
+                {
+                    var sum = 0F;
+                    foreach (var shape in thing)
+                    {
+                        sum += shape.GetArea();
+                    }
+                    return sum;
+                }
+            }
+            return 0;
+           // else { return thing.GetArea(); }
         }
 
         /// <summary>
@@ -30,7 +50,7 @@ namespace AssignmentGeometri.Geometry
         /// <returns></returns>
         public float GetPerimeter(GeometricThing[] thing)
         {
-            if (thing == null) { return 0F; }
+            if (thing == null) { return 0; }
             else
             {
                 if (thing.Length == 1)

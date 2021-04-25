@@ -50,6 +50,42 @@ namespace AssignmentGeometri.Tests
         }
 
         /// <summary>
+        /// Test Perimeter of Array with shapes with number 0.
+        /// </summary>
+        [TestMethod()]
+        public void GetPerimeterTest_ArrayOfShapes_0()
+        {
+            var calc = new GeometricCalculator();
+            var actual = calc.GetPerimeter(new GeometricThing[]
+            {
+                new Square(0),
+                new Circle(0),
+                new Rectangle(0,0),
+                new Triangle(0,0)
+            });
+            var expected = 0F;
+            Assert.AreEqual(Math.Round(expected, 2), Math.Round(actual, 2));
+        }
+
+        /// <summary>
+        /// Test Perimeter of Array with shapes with negative numbers.
+        /// </summary>
+        [TestMethod()]
+        public void GetPerimeterTest_ArrayOfShapes_Negative()
+        {
+            var calc = new GeometricCalculator();
+            var actual = calc.GetPerimeter(new GeometricThing[]
+            {
+                new Square(-10),
+                new Circle(-20),
+                new Rectangle(-30,-40),
+                new Triangle(-50,-60)
+            });
+            var expected = 0F;
+            Assert.AreEqual(Math.Round(expected, 2), Math.Round(actual, 2));
+        }
+
+        /// <summary>
         /// Test Perimeter of Square with side 10.
         /// </summary>
         [TestMethod()]
@@ -60,7 +96,6 @@ namespace AssignmentGeometri.Tests
             {
                 new Square(10)
             });
-
             var expected = 40F;
             Assert.AreEqual(Math.Round(expected, 2), Math.Round(actual, 2));
         }
@@ -76,7 +111,6 @@ namespace AssignmentGeometri.Tests
             {
                 new Square(20)
             });
-
             var expected = 80F;
             Assert.AreEqual(Math.Round(expected, 2), Math.Round(actual, 2));
         }
@@ -92,7 +126,6 @@ namespace AssignmentGeometri.Tests
             {
                 new Rectangle(10, 20)
             });
-
             var expected = 60F;
             Assert.AreEqual(Math.Round(expected, 2), Math.Round(actual, 2));
         }
@@ -108,7 +141,6 @@ namespace AssignmentGeometri.Tests
             {
                 new Rectangle(20, 30)
             });
-
             var expected = 100F;
             Assert.AreEqual(Math.Round(expected, 2), Math.Round(actual, 2));
         }
@@ -124,7 +156,6 @@ namespace AssignmentGeometri.Tests
             {
                 new Triangle(10, 20)
             });
-
             var expected = 40F;
             Assert.AreEqual(Math.Round(expected, 2), Math.Round(actual, 2));
         }
@@ -140,7 +171,6 @@ namespace AssignmentGeometri.Tests
             {
                 new Triangle(20, 30)
             });
-
             var expected = 70F;
             Assert.AreEqual(Math.Round(expected, 2), Math.Round(actual, 2));
         }
@@ -156,7 +186,6 @@ namespace AssignmentGeometri.Tests
             {
                 new Circle(10)
             });
-
             var expected = 62.83F;
             Assert.AreEqual(Math.Round(expected, 2), Math.Round(actual, 2));
         }
@@ -172,7 +201,6 @@ namespace AssignmentGeometri.Tests
             {
                 new Circle(20)
             });
-
             var expected = 125.66F;
             Assert.AreEqual(Math.Round(expected, 2), Math.Round(actual, 2));
         }
@@ -184,7 +212,10 @@ namespace AssignmentGeometri.Tests
         public void GetAreaTest_Square_10()
         {
             var calc = new GeometricCalculator();
-            var actual = calc.GetArea(new Square(10));
+            var actual = calc.GetArea(new GeometricThing[]
+            {
+                new Square(10)
+            });
             var expected = 100F;
             Assert.AreEqual(Math.Round(expected, 2), Math.Round(actual, 2));
         }
@@ -196,7 +227,10 @@ namespace AssignmentGeometri.Tests
         public void GetAreaTest_Square_20()
         {
             var calc = new GeometricCalculator();
-            var actual = calc.GetArea(new Square(20));
+            var actual = calc.GetArea(new GeometricThing[]
+            {
+                new Square(20)
+            });
             var expected = 400F;
             Assert.AreEqual(Math.Round(expected, 2), Math.Round(actual, 2));
         }
@@ -208,7 +242,10 @@ namespace AssignmentGeometri.Tests
         public void GetAreaTest_Rectangle_10_20()
         {
             var calc = new GeometricCalculator();
-            var actual = calc.GetArea(new Rectangle(10, 20));
+            var actual = calc.GetArea(new GeometricThing[]
+            {
+               new Rectangle(10, 20)
+            });
             var expected = 200F;
             Assert.AreEqual(Math.Round(expected, 2), Math.Round(actual, 2));
         }
@@ -220,7 +257,10 @@ namespace AssignmentGeometri.Tests
         public void GetAreaTest_Rectangle_20_30()
         {
             var calc = new GeometricCalculator();
-            var actual = calc.GetArea(new Rectangle(20, 30));
+            var actual = calc.GetArea(new GeometricThing[]
+                {
+                    new Rectangle(20, 30)
+               });
             var expected = 600F;
             Assert.AreEqual(Math.Round(expected, 2), Math.Round(actual, 2));
         }
@@ -232,7 +272,10 @@ namespace AssignmentGeometri.Tests
         public void GetAreaTest_Triangle_10_10()
         {
             var calc = new GeometricCalculator();
-            var actual = calc.GetArea(new Triangle(10, 10));
+            var actual = calc.GetArea(new GeometricThing[]
+            {
+                new Triangle(10, 10)
+            });
             var expected = 50F;
             Assert.AreEqual(Math.Round(expected, 2), Math.Round(actual, 2));
         }
@@ -244,7 +287,10 @@ namespace AssignmentGeometri.Tests
         public void GetAreaTest_Triangle_20_20()
         {
             var calc = new GeometricCalculator();
-            var actual = calc.GetArea(new Triangle(20, 20));
+            var actual = calc.GetArea(new GeometricThing[]
+            {
+                new Triangle(20, 20)
+            });
             var expected = 200F;
             Assert.AreEqual(Math.Round(expected, 2), Math.Round(actual, 2));
         }
@@ -256,7 +302,10 @@ namespace AssignmentGeometri.Tests
         public void GetAreaTest_Circle_10()
         {
             var calc = new GeometricCalculator();
-            var actual = calc.GetArea(new Circle(10));
+            var actual = calc.GetArea(new GeometricThing[]
+            {
+             new Circle(10)
+            });
             var expected = 314.16F;
             Assert.AreEqual(Math.Round(expected, 2), Math.Round(actual, 2));
         }
@@ -268,7 +317,10 @@ namespace AssignmentGeometri.Tests
         public void GetAreaTest_Circle_20()
         {
             var calc = new GeometricCalculator();
-            var actual = calc.GetArea(new Circle(20));
+            var actual = calc.GetArea(new GeometricThing[]
+            {
+                new Circle(20)
+            });
             var expected = 1256.64F;
             Assert.AreEqual(Math.Round(expected, 2), Math.Round(actual, 2));
         }
@@ -296,6 +348,24 @@ namespace AssignmentGeometri.Tests
             var actual = calc.GetPerimeter(null);
             var expected = 0F;
             Assert.AreEqual(expected, actual);
+        }
+
+        /// <summary>
+        /// Test Area of Array of shapes with negative numbers.
+        /// </summary>
+        [TestMethod()]
+        public void GetAreaTest_ArrayOfShapes_Negative()
+        {
+            var calc = new GeometricCalculator();
+            var actual = calc.GetArea(new GeometricThing[]
+            {
+                new Square(-10),
+                new Rectangle(-20, -30),
+                new Circle(-40),
+                new Triangle(-50, -60)
+            });
+            var expected = 0F;
+            Assert.AreEqual(Math.Round(expected, 2), Math.Round(actual, 2));
         }
     }
 }
