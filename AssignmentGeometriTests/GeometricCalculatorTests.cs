@@ -186,10 +186,10 @@ namespace AssignmentGeometri.Tests
             {
                 new Square(10),
                 new Circle(10),
-                new Rectangle(10,10),
+                new Rectangle(10,20),
                 new Triangle(10,10)
             });
-            var expected = 172.83F;
+            var expected = 192.83F;
             Assert.AreEqual(Math.Round(expected, 2), Math.Round(actual, 2));
         }
 
