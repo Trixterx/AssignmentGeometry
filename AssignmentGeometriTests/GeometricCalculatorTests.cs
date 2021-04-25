@@ -1,12 +1,6 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using AssignmentGeometri;
+﻿using AssignmentGeometri.Geometry;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AssignmentGeometri.Geometry;
-using System.Data;
 
 namespace AssignmentGeometri.Tests
 {
@@ -324,7 +318,6 @@ namespace AssignmentGeometri.Tests
             var expected = 1256.64F;
             Assert.AreEqual(Math.Round(expected, 2), Math.Round(actual, 2));
         }
-
 
         /// <summary>
         /// Test Area method with null.

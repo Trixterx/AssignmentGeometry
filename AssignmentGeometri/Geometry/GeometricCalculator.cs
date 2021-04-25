@@ -1,11 +1,4 @@
-﻿using AssignmentGeometri.Geometry;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AssignmentGeometri.Geometry
+﻿namespace AssignmentGeometri.Geometry
 {
     /// <summary>
     /// Class for the Geometric Calculator.
@@ -40,7 +33,6 @@ namespace AssignmentGeometri.Geometry
                 }
             }
             return 0;
-           // else { return thing.GetArea(); }
         }
 
         /// <summary>

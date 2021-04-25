@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AssignmentGeometri
+﻿namespace AssignmentGeometri
 {
     public abstract class GeometricThing
     {
@@ -13,6 +7,7 @@ namespace AssignmentGeometri
         /// </summary>
         /// <returns>Perimeter in float.</returns>
         public abstract float GetPerimeter();
+
         /// <summary>
         /// Calculate Area.
         /// </summary>
