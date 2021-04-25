@@ -6,7 +6,6 @@ namespace AssignmentGeometri
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
         }
     }
 }
