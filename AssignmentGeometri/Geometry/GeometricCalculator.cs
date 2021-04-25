@@ -19,7 +19,7 @@ namespace AssignmentGeometri.Geometry
         /// <returns></returns>
         public float GetArea(GeometricThing thing)
         {
-            if (thing == null) { return 0; }
+            if (thing == null) { return 0F; }
             else { return thing.GetArea(); }
         }
 
@@ -30,7 +30,7 @@ namespace AssignmentGeometri.Geometry
         /// <returns></returns>
         public float GetPerimeter(GeometricThing[] thing)
         {
-            if (thing == null) { return 0; }
+            if (thing == null) { return 0F; }
             else
             {
                 if (thing.Length == 1)

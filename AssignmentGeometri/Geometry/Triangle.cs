@@ -22,12 +22,14 @@ namespace AssignmentGeometri.Geometry
 
         public override float GetArea()
         {
-            return (Base * Height) / 2;
+            if (Base <= 0 || Height <= 0) { return 0; }
+            else { return (Base * Height) / 2; }
         }
 
         public override float GetPerimeter()
         {
-            return Base + (Height * 2);
+            if (Base <= 0 || Height <= 0) { return 0; }
+            else { return Base + (Height * 2); }
         }
     }
 }

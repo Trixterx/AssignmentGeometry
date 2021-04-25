@@ -45,7 +45,7 @@ namespace AssignmentGeometri.Tests
                 new Rectangle(10,20),
                 new Triangle(20,20)
             });
-            var expected = 172.83F;
+            var expected = 325.66F;
             Assert.AreEqual(Math.Round(expected, 2), Math.Round(actual, 2));
         }
 

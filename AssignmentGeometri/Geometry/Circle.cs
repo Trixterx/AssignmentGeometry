@@ -20,12 +20,14 @@ namespace AssignmentGeometri.Geometry
 
         public override float GetArea()
         {
-            return (float)Math.PI * (float)Math.Pow(Radius, 2);
+            if (Radius <= 0) { return 0; }
+            else { return (float)Math.PI * (float)Math.Pow(Radius, 2); }
         }
 
         public override float GetPerimeter()
         {
-            return 2 * (float)Math.PI * Radius;
+            if (Radius <= 0) { return 0; }
+            else { return 2 * (float)Math.PI * Radius; }
         }
     }
 }
